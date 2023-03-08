@@ -1,0 +1,56 @@
+@import "../styles/colors";
+@import "../styles/media-queries";
+
+.hero {
+  background-color: $light;
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    margin: 0 auto;
+    height: 90vh;
+    z-index: 1;
+    width: 100%;
+    max-width: 1200px;
+    padding-right: 24px;
+    padding-left: 24px;
+    @include tablet {
+      grid-template-columns: 1fr;
+      height: 100%;
+    }
+    &--left {
+      width: 100%;
+      line-height: 1.2;
+      @include tablet {
+        padding: 5rem 0;
+      }
+      @include mobile {
+        line-height: 1.5;
+      }
+    }
+    &--left h1 {
+      font-size: 1rem;
+      color: $lime;
+      @include mobile {
+        font-size: 1.5rem;
+      }
+    }
+    &--left h2 {
+      font-size: 1rem;
+      color: $dark;
+      @include mobile {
+        font-size: 2rem;
+      }
+    }
+    &--left p {
+      font-size: 2rem;
+      font-weight: 700;
+      color: $dark;
+      margin-top: 1rem;
+      @include mobile {
+        font-size: 2rem;
+      }
+    }
+  }
+}
