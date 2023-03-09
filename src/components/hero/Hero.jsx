@@ -10,7 +10,7 @@ const Hero = () => {
           <h2>Be Prepared</h2>
           <p>Sign up now to get join the list.</p>
           <button className="hero__container--btn">
-            <a href="#">Sign Up</a>
+            <a href="#" role="link">Sign Up</a>
           </button>
         </div>
         <div className="hero__container--right">

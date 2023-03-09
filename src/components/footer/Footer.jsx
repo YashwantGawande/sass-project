@@ -45,8 +45,8 @@ const Footer = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
           </p>
           <div className="footer__container--newsletter--input">
-            <input placeholder="Email Address" />
-            <button>
+            <input placeholder="Email Address" role="form" />
+            <button role="button">
               <SendIcon />
             </button>
           </div>

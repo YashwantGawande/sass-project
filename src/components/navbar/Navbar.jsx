@@ -1,27 +1,27 @@
 import React from "react";
 import DehazeIcon from "@mui/icons-material/Dehaze";
-import "./Navbar.scss"
+import "./Navbar.scss";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <a href="" className="navbar__logo">
+      <a href="" role="link" className="navbar__logo">
         SASS
       </a>
       <div className="navbar__bars">
         <DehazeIcon />
       </div>
       <div className="navbar__menu">
-        <a href="" className="navbar__menu--links">
+        <a href="" role="link" className="navbar__menu--links">
           Home
         </a>
-        <a href="" className="navbar__menu--links">
+        <a href="" role="link" className="navbar__menu--links">
           Products
         </a>
-        <a href="" className="navbar__menu--links">
+        <a href="" role="link" className="navbar__menu--links">
           Services
         </a>
-        <a href="" className="navbar__menu--links" id="button">
+        <a href="" role="link" className="navbar__menu--links" id="button">
           Sign Up
         </a>
       </div>
