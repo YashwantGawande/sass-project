@@ -9,7 +9,7 @@
     align-items: center;
     justify-items: center;
     margin: 0 auto;
-    height: 90vh;
+    height: 100vh;
     z-index: 1;
     width: 100%;
     max-width: 1200px;
@@ -30,14 +30,14 @@
       }
     }
     &--left h1 {
-      font-size: 1rem;
+      font-size: 4rem;
       color: $lime;
       @include mobile {
         font-size: 1.5rem;
       }
     }
     &--left h2 {
-      font-size: 1rem;
+      font-size: 4rem;
       color: $dark;
       @include mobile {
         font-size: 2rem;
@@ -51,6 +51,46 @@
       @include mobile {
         font-size: 2rem;
       }
+    }
+    &--btn {
+      font-size: 1rem;
+      background-color: $lime;
+      padding: 14px 32px;
+      border: transparent;
+      border-radius: 4px;
+      color: $light;
+      margin-top: 2rem;
+      cursor: pointer;
+      position: relative;
+      transition: all 0.3s;
+      outline: transparent;
+    }
+    &--btn a {
+      position: relative;
+      z-index: 2;
+      color: $light;
+      text-decoration: transparent;
+    }
+    &--btn:after {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 0;
+      background-color: $orangeRed;
+      height: 100%;
+      transition: all 0.3s;
+      border-radius: 4px;
+    }
+    &--btn:hover:after {
+      width: 100%;
+    }
+    &--right {
+      text-align: center;
+    }
+    &--img {
+      height: 100%;
+      width: 100%;
     }
   }
 }
